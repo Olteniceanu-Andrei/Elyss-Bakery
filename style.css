@@ -1,0 +1,823 @@
+/* Resetare stilizare implicită */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stilizare globală */
+  body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Stilizare antet */
+  header {
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+
+  
+  /* Stilizare secțiune principala */
+  .hero {
+    background-image: url('/pozemacarons/macarons.jpg');
+    background-size:cover;
+    background-position: center;
+    padding: 200px 0;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 10px;
+    
+  }
+  
+  .hero-content {
+    background: #C8D4E0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    
+  }
+  
+  .hero-content:hover {
+    box-shadow: 0 0 100px 30px #c0c0c0;
+  }
+  .hero .btn {
+    display: inline-block;
+    padding: 10px 20px ;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;;
+
+  }
+
+  .hero .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+.pret {
+    padding-top: 20px;
+    font-size: xx-large;
+    animation: fadeIn 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
+
+}
+
+  
+  .titlu-macarons {
+    padding-top: 30px;
+    font-size: xx-large;
+  }
+
+  .subtitlu {
+    padding-top: 5px;
+  }
+
+
+
+  .descriere-curs {
+    font-size: 20px;
+    padding-block: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+  /* Stilizare sectiune Ce inveti la curs? */
+  
+  .learn-curs {
+    background-color: #C8D4E0;
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .learn-curs h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .learn-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .learn-img {
+    flex: 0 0 40%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .learn-img img {
+    display: block;
+    height: 200px;
+    width: 170px;
+    border-radius: 50px;
+    background-size: auto;
+  }
+  
+  .learn-content {
+    flex: 1;
+  }
+  
+  .learn-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .learn-item p {
+    font-size: 18px;
+  }
+
+  .learn-item p:hover{
+    color: white;
+  }
+  
+  
+  /* Stilizare secțiune Prezentarea cursului */
+  .prezentarecurs {
+    background-image: url('/pozemacarons/desprenoi.jpg');
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+  }
+  
+  .prezentarecurs-content {
+    width: 100%;
+    display: flex;
+    padding-right: 40px;
+    
+  }
+
+  .prezentarecurs-stanga {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    
+  }
+  .prezentarecurs-dreapta {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+   
+  }
+
+  .prezentarecurs-dreapta video {
+    padding-left: 10px;
+    border-radius: 50px;
+  }
+
+
+  .prezentarecurs-stanga h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .prezentarecurs-stanga p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  /* Cuprinsul cursului */
+
+  .how-to-learn {
+    background-color: #ffffff;
+    padding: 40px 0;
+  }
+  
+  .how-to-learn h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .step-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #C8D4E0;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .step-icon i {
+    font-size: 24px;
+  }
+  
+  .step-content {
+    flex: 1;
+  }
+  
+  .step-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .step-content p {
+    font-size: 18px;
+  }
+  
+  /* Cum vei invata? */
+
+  .cumveiinvata {
+    width: 100%;
+    --color: rgba(30, 30, 30);
+    --bgColor: #ffffff;
+  
+    display: grid;
+    align-content: center;
+    font-family: "Jura", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  ul {
+    width: min(60rem, 100%);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    justify-content: center;
+    gap: 0rem;
+    list-style: none;
+  }
+  
+  ul li {
+    max-width: 14rem;
+    justify-self: center;
+    display: grid;
+    grid-template:
+      "icon"
+      "line"
+      "dot"
+      "title"
+      "descr" 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  ul li .icon {
+    grid-area: icon;
+    width: 6rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 2.5rem;
+    border: 0.4rem solid var(--bgColor);
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+      inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+  }
+  
+  ul li::before {
+    content: "";
+    grid-area: line;
+    height: 2rem;
+    border-right: 2px dotted currentColor;
+  }
+  
+  ul li::after {
+    content: "";
+    grid-area: dot;
+    width: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--accent-color);
+    justify-self: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul li .title {
+    grid-area: title;
+    margin-block: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .credits {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .credits a {
+    color: var(--color);
+  }
+  
+  /* Testimoniale */
+  .reviews {
+    background-color: #C8D4E0;
+    width: 100%;
+    padding: 40px 0;
+  }
+  
+  .reviews h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .review-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 600px; /* Setează înălțimea imaginilor */
+  }
+  
+  .review-item {
+    margin: 0 10px;
+  }
+  
+  .review-item img {
+    width: auto;
+    height: 600px;
+    object-fit: fill;
+  }
+  
+  /* About US */
+
+  .about-us {
+    background-image: url('/pozemacarons/desprenoi.jpg');
+    color: white;
+    padding: 80px 0;
+    width: 100%;
+  }
+  
+  .containeraboutus {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .about-image {
+    width: 30%;
+    position: relative;  
+  }
+  
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-height: 100%;
+  }
+
+
+.about-image:hover .original-image {
+  opacity: 0;
+}
+
+.about-image:hover .hover-image {
+  opacity: 1;
+}
+
+  .about-image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .about-text {
+    width: 70%;
+  }
+  
+  .about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .about-text a {
+    color: white;
+  }
+
+  .about-text a:hover {
+    color: #C8D4E0;
+  }
+
+  /* Detalii despre curs */
+  .detalii-despre-curs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .detaliijos1:hover {
+    color: #C8D4E0;
+  }
+
+  .detaliijos2:hover {
+    color: #C8D4E0;
+  }
+  .detaliijos3:hover {
+    color: #C8D4E0;
+  }
+  .detaliijos4:hover {
+    color: #C8D4E0;
+  }
+
+
+  .detalii-despre-curs h2 {
+    font-size: 38px;
+    padding-bottom: 20px;
+  }
+
+  .detaliijos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .detaliijos div {
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .icondetalii {
+    margin-left: 60px;
+  }
+
+  .detaliijos1 p{
+    padding-top: 20px;
+  }
+
+
+  .detaliijos2 p{
+    padding-top: 20px;
+  }
+
+
+  .detaliijos3 p{
+    padding-top: 20px;
+  }
+  
+
+  .detaliijos4 p{
+    padding-top: 20px;
+  }
+  /* Stilizare Intrebari Frecvente */
+  .faq {
+    background-color: #ffffff;
+    padding: 40px 0;
+    width: 50%;
+  }
+  
+  .faq h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .faq-item {
+    margin-bottom: 30px;
+  }
+  
+  .faq-item .question {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .faq-item .question:hover {
+    color: #C8D4E0;
+  }
+  .faq-item .question .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .faq-item.active .question .icon {
+    transform: rotate(45deg);
+  }
+  
+  .faq-item .answer {
+    font-size: 18px;
+    display: none;
+  }
+  
+  .faq-item.active .answer {
+    display: block;
+  }
+  
+  
+  /* Stilizare secțiune Produse */
+  .products {
+    padding-top: 40px;
+    text-align: center;
+    background-color: #C8D4E0;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .products h2 {
+    font-size: 38px;
+  }
+  
+  .products h4 {
+    margin-bottom: 20px;
+    font-size: large;
+  }
+  .product-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .product1 {
+    background-image: url('/pozemacarons/silver.jpg');
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    width: 30%;
+    height: 800px;
+  }
+
+  .product1:hover {
+    box-shadow: 0 0 100px 30px #c0c0c0;
+  }
+
+  .pretsilver {
+    padding-top: 8px;
+  }
+  .product2 {
+    background-image: url('/pozemacarons/gold.jpg');
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    width: 30%;
+    height: 800px;
+
+  }
+
+  .product2:hover {
+    box-shadow: 0 0 100px 30px #BE7D1F;
+  }
+
+  
+  .product1 img {
+    width: 70%;
+    max-height: 100vh;
+    object-fit: fill;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  }
+  
+  .product2 img {
+    width: 70%;
+    max-height: 100vh;
+    object-fit: fill;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  }
+
+  .product1 h2 {
+    font-size: 34px;
+  }
+
+  .product2 h2 {
+    font-size: 34px;
+
+  }
+  
+
+
+  .product1 .btn {
+    display: inline-block;
+    padding: 10px 20px ;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;;
+  }
+  
+  .product2 .btn {
+    display: inline-block;
+    padding: 10px 20px ;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;;
+  }
+
+  .product1 .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .product2 .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  /* Stilizare subsol */
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+
+  footer p a {
+    color: white;
+  }
+
+  footer img {
+    max-height: 200px;
+    border-radius: 100px;
+    padding-bottom: 10px;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+
+  }
+  
+
+  @media screen and (max-width: 1400px){
+
+    .prezentarecurs-dreapta video {
+      padding-left: 5px;
+      
+    }
+      .prezentarecurs-stanga {
+        margin-left: -30px;
+      }
+
+    }
+  @media screen and (max-width: 1100px){
+    .prezentarecurs-dreapta video {
+      padding-left: 20px;
+      
+    }
+      .prezentarecurs-stanga {
+        margin-left: -30px;
+        margin-right: 25px;
+      }
+    
+
+    .video3 {
+      display: none;
+    }
+    
+    .icondetalii {
+      margin-left: 20px;
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 800px){
+    .prezentarecurs-dreapta video {
+      padding-left: 50px;
+      border-radius: 0px;
+    }
+
+    .prezentarecurs-stanga {
+      padding-left: 10px;
+    }
+
+    .video2 {
+      display: none;
+    }
+
+    .paragrafnu {
+      display: none;
+    }
+
+    .about-image {
+      width: 30%;
+      margin-right: 0px;
+
+    }
+
+    .about-text {
+      width: 70%;
+    }
+
+    .icondetalii {
+      margin-left: 20px;
+    }
+
+    .product1 {
+      width: 60%;
+    }
+
+    .product2 {
+      width: 60%;
+      margin-top: 40px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 600px) {
+  .icondetalii {
+    margin-left: -10px;
+  }
+
+}
+  @media screen and (max-width: 400px) {
+    .paragrafnu {
+      display: none;
+    }
+
+    .about-image {
+      width: 50%;
+      margin-right: 0px;
+    }
+
+    .about-text {
+      width: 50%;
+    }
+
+    .icondetalii {
+      margin-left: -20px;
+    }
+
+
+  }
